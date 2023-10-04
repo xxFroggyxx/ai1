@@ -38,3 +38,21 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+.container {
+}
+
+.container > .header {
+}
+
+.container > .menu {
+}
+
+.container > .main {
+}
+
+.container > .advertisement {
+}
+
+.container > .footer {
+}
