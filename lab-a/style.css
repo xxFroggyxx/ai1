@@ -1,3 +1,11 @@
+:root {
+  --text: #1d021c;
+  --background: #ffffff;
+  --primary: #0dde10;
+  --seconadry: #c2dbc3;
+  --accent: #4e836a;
+}
+
 *,
 *::before,
 *::after {
