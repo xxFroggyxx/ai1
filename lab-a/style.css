@@ -40,19 +40,51 @@ h6 {
 }
 
 .container {
+  display: grid;
+  grid-template-areas: 'header' 'menu' 'main' 'ads' 'footer';
+}
+
+.container > * {
+  padding: 1rem;
 }
 
 .container > .header {
+  grid-area: header;
 }
 
 .container > .menu {
+  grid-area: menu;
 }
 
 .container > .main {
+  grid-area: main;
 }
 
 .container > .advertisement {
+  grid-area: ads;
 }
 
 .container > .footer {
+  grid-area: footer;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'header header'
+      'menu ads'
+      'main main'
+      'footer footer';
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'header header header header'
+      'menu main main ads'
+      'footer footer footer footer';
+  }
 }
