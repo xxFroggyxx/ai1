@@ -110,6 +110,20 @@ h6 {
 
 .container > .main {
   grid-area: main;
+  outline: 2px var(--shadow) solid;
+}
+
+.container > .main > h2,
+.container > .main > h3 {
+  margin-bottom: 1rem;
+}
+
+.container > .main > p {
+  margin-bottom: 1.5rem;
+}
+
+.container > .main > p:last-child {
+  margin-bottom: 0;
 }
 
 .container > .advertisement {
