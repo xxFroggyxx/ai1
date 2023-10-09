@@ -60,8 +60,17 @@ h6 {
   padding: 1rem;
 }
 
+.container > .header,
+.container > .footer {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: var(--primary);
+}
+
 .container > .header {
   grid-area: header;
+  text-transform: uppercase;
 }
 
 .container > .menu {
