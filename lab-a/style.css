@@ -108,6 +108,10 @@ h6 {
   height: 100%;
 }
 
+.container > .menu > ol > li > a:hover {
+  color: var(--primary);
+}
+
 .container > .main {
   grid-area: main;
   outline: 2px var(--shadow) solid;
