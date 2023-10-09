@@ -128,6 +128,13 @@ h6 {
 
 .container > .advertisement {
   grid-area: ads;
+  display: grid;
+  justify-items: center;
+}
+
+.container > .advertisement > img {
+  border: 2px solid var(--primary);
+  border-radius: 5px;
 }
 
 .container > .footer {
