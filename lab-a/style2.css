@@ -49,3 +49,14 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > * {
+  width: 100%;
+  padding: 1rem;
+}
