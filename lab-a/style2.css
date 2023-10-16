@@ -60,3 +60,17 @@ h6 {
   width: 100%;
   padding: 1rem;
 }
+
+.container > .header,
+.container > .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--background);
+  background-color: var(--primary);
+}
+
+.container > .header {
+  text-transform: uppercase;
+}
