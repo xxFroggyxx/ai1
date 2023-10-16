@@ -126,3 +126,29 @@ h6 {
   margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+  .container > .menu,
+  .container > .advertisement {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container > .header {
+    order: -3;
+  }
+
+  .container > .main {
+    width: 50%;
+    order: -1;
+  }
+
+  .container > .menu {
+    order: -2;
+  }
+
+  .container > .menu,
+  .container > .advertisement {
+    width: 25%;
+  }
+}
