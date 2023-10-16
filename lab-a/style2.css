@@ -126,6 +126,16 @@ h6 {
   margin-bottom: 0;
 }
 
+.container > .advertisement {
+  display: flex;
+  justify-content: center;
+}
+
+.container > .advertisement > img {
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+}
+
 @media (min-width: 768px) {
   .container > .menu,
   .container > .advertisement {
