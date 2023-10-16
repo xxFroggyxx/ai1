@@ -74,3 +74,37 @@ h6 {
 .container > .header {
   text-transform: uppercase;
 }
+
+.container > .menu > ol {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0;
+}
+
+.container > .menu > ol > li {
+  text-align: center;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.container > .menu > ol > li > a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  padding: 1rem;
+}
+
+.container > .menu > ol > li.active::after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid var(--primary);
+  width: 6rem;
+  margin: auto;
+  border-radius: 32px;
+}
+
+.container > .menu > ol > li:not(.active) > a:hover {
+  outline: 3px solid var(--shadow);
+}
