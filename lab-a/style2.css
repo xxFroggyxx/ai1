@@ -129,6 +129,7 @@ h6 {
 .container > .advertisement {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .container > .advertisement > img {
