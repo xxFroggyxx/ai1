@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#weather-search-params,
+#weather-results-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+#weather-results-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, auto);
+  gap: 1rem;
+}
+
+.weather-block {
+  display: block;
+  width: 350px;
+  height: 120px;
+  border: 1px solid #c0c0c0;
+  position: relative;
+  margin: 15px auto;
+  text-align: left;
+}
+
+.weather-date {
+  font-weight: bold;
+  width: 350px;
+  text-align: left;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 20px;
+}
+
+.weather-icon {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.weather-temperature {
+  position: absolute;
+  top: 30px;
+  left: 110px;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.weather-temperature-feels-like {
+  position: absolute;
+  top: 70px;
+  left: 110px;
+}
+
+.weather-description {
+  position: absolute;
+  top: 90px;
+  left: 110px;
+}

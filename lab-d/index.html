@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <div id="weather-search-params">
+      <h1 class="title">Pogodynka</h1>
+      <input type="text" value="Stargard, Poland" id="locationInput" />
+      <button id="checkButton">Sprawdź!</button>
+    </div>
+
+    <div id="weather-current">
+      <p style="text-align: center; opacity: 0.5; margin-top: 0.5rem">Czekam na wykonanie zapytania</p>
+    </div>
+
+    <div id="weather-results-container"></div>
+  </body>
+</html>
